@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="http://img.wcdn.cn/t4/style/css/module/base/frame.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/forms/form_table.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/forms/form_notice.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_frame.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/tab/tab_e.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_tips.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_setup_followlists.css" type="text/css" rel="stylesheet" />
+        <title>用户列表</title>
+		 <script type="text/javascript" src="http://js.t.sinajs.cn/STK/js/gaea_1_15.js">
+        </script>
+        <script type="text/javascript">
+            var $CONFIG = {};
+            $CONFIG['islogin'] = '1';
+			$CONFIG['setCover'] = 1;//ie6hack
+            $CONFIG['oid'] = '1736398657';
+            $CONFIG['onick'] = '不晓得V';
+            $CONFIG['allowConnect'] = 'false';
+            $CONFIG['uid'] = '1736398657';
+            $CONFIG['nick'] = '不晓得V';
+            $CONFIG['domain'] = 'buxiaodewa';
+            $CONFIG['sex'] = 'm';
+            $CONFIG['groupfeed'] = '0';
+            $CONFIG['afterupgrade'] = 'false';
+            $CONFIG['version'] = '1321419702';
+            $CONFIG['bigpipe'] = 'true';
+            $CONFIG['timeDiff'] = (new Date() - 1321437571000);
+            $CONFIG['product'] = 'v4mblog';
+            $CONFIG['pageid'] = 'content_home';
+            $CONFIG['skin'] = 'diy';
+            $CONFIG['background'] = "677f5741tw1dm5u2nosa2j";
+            $CONFIG['scheme'] = "diy013";
+            $CONFIG['colors_type'] = "1";
+            $CONFIG['lang'] = 'zh-cn';
+            $CONFIG['jsPath'] = 'http://js.t.sinajs.cn/t4/';
+            $CONFIG['cssPath'] = 'http://img.t.sinajs.cn/t4/';
+            $CONFIG['imgPath'] = 'http://img.t.sinajs.cn/t4/';
+            $CONFIG['servertime'] = 1321437571;
+            $CONFIG['any'] = "&wvr=3.6";
+            $CONFIG['$webim'] = 0;
+            $CONFIG['location'] = 'home';
+            $CONFIG['isnarrow'] = '1';
+            $CONFIG['bpType'] = 'main';
+            $CONFIG['mJsPath'] = ['http://js{n}.t.sinajs.cn/t4/', 1, 2];
+            $CONFIG['mCssPath'] = ['http://img{n}.t.sinajs.cn/t4/', 1, 2];
+			$CONFIG['group'] = [
+				{'gid': '11111', 'gname':'测试分组一'},
+				{'gid': '22222', 'gname':'测试分组二'},
+				{'gid': '33333', 'gname':'测试分组三'}
+			];
+        </script>
+    </head>
+    <body class="B_fans_myconn">
+        <div class="W_main">
+        	<button onclick="openGG()">引导浮层</button>
+            <button onclick="openGP()">分组成员</button>
+			<button onclick="openAP()">添加分组</button>
+			<button onclick="openUP()">编辑分组</button>
+			<button onclick="openSP()">关注成功</button>
+        </div>
+		<script type="text/javascript" src="http://js.t.sinajs.cn/t4/home/js/relation/myFollow.js">
+        </script>
+		
+		<script>
+		
+			function openGG(){
+				var a = STK.common.group.publicGroupGuide();
+				a.setMiddle();
+				a.show();
+			};
+			
+			function openGP(){
+				var a = STK.common.dialog.groupPersonnel();
+				a.show({'gid':'1123123123', 'gname': '傻子社区'});
+			};
+			
+			function openAP(){
+				var a = STK.common.dialog.addGroup();
+				a.show();
+			};
+			
+			function openUP(){
+				var a = STK.common.dialog.addGroup();
+				a.show({
+					'gid':'1111111111',
+					'name': 'aaa',
+					'mode': 'public',
+					'desc': 'xxxxxxxxxx',
+					'tags': 'a,b,c,d'
+				});
+			};
+			
+			function openSP(){
+				var a = STK.common.dialog.setOrAddGroup();
+				var data = [
+					{"gid":"201012220016618019","gname":"\u524d\u7aef\u5f00\u53d1","belong":0, 'mode':'public'},
+					{"gid":"221104220073060177","gname":"\u7535\u5f71","belong":0, 'mode':'public'},
+					{"gid":"201008100002786966","gname":"\u5176\u4ed6","belong":0, 'mode':'public'},
+					{"gid":"201009080004360970","gname":"\u65b0\u95fb"},
+					{"gid":"201009130004614189","gname":"\u540c\u4e8b","belong":0},
+					{"gid":"201009140004662757","gname":"\u5a31\u4e50\u540d\u4eba"},
+					{"gid":"201009140004669053","gname":"\u7b11\u8bdd\u8da3\u56fe"},
+					{"gid":"201009140004671175","gname":"some people","belong":1, 'mode':'private'},
+					{"gid":"201009140004675984","gname":"IT\u540d\u4eba","belong":0, 'mode':'friend'},
+					{"gid":"201009140004671621","gname":"\u767e\u79d1","belong":0, 'mode':'friend'},
+					{"gid":"221105220223574318","gname":"\u670b\u53cb","belong":0, 'mode':'friend'}];
+				a.show('old', {
+					'group':{
+						'multi': true,
+						'data': data
+					}
+				});
+			}
+        </script>
+    </body>
+</html>

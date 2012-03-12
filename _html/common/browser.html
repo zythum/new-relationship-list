@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>home</title>
+		<link href="http://js.wcdn.cn/t4/style/css/module/base/usually.css" type="text/css" rel="stylesheet" />
+		<link href="http://js.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js"></script>
+		
+    </head>
+    <body>
+    <div id='main'></div>
+	<script type="text/javascript">
+		var ua = STK.core.util.browser;
+		var arr = [],str;
+		var node = STK.sizzle('#main')[0];
+		for(var k in ua){
+			arr.push(k.toLowerCase());
+			arr.push('\n');
+			arr.push(ua[k]);
+			arr.push('<br/>');
+		}
+		arr.push('<br/>');
+		arr.push(navigator.userAgent);
+		node.innerHTML = arr.join('');
+	</script>
+
+    </body>
+	
+</html>

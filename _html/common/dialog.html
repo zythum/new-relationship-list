@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>home</title>
+		<link href="http://10.210.74.52/t4/style/css/module/base/usually.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/style/css/module/forms/send_weibo.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/style/css/module/layer/layer_send_weibo.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/style/css/module/layer/layer_frame.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/style/css/module/layer/layer_point.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="http://10.210.74.52/STK/js/gaea.js"></script>
+		<script type="text/javascript" src="http://10.210.74.52/t4/home/js/demoOfCommon/dialog.js"></script>
+		
+    </head>
+    <body>
+		<div style="height:600px;width:400px;background-color:red"></div>
+    	<div id="test">fuck You!!!</div>
+		<button onclick="testDialog()">click me!</button>
+		<button onclick="testAlt()">I am alert</button>
+		<button onclick="testCfm()">I am confirm</button>
+		<textarea id="a">test</textarea>
+    </body>
+	<!--demo for dialog-->
+	<script type="text/javascript">
+		var test = STK.E('test');
+		var testDialog = function(){
+			var a = STK.ui.dialog();
+				a.show();
+				a.setTitle('你丫傻逼吧');
+				a.setContent(test);
+				a.setMiddle();
+		};
+	</script>
+	
+	<!--demo for dialog-->
+	<script type="text/javascript">
+		var testAlt = function(){
+			var a = STK.ui.alert('这是一个测试', {
+				'title' : '我真的是测试啊',
+				'icon' : 'warn',
+				'textSmall' : '你妹啊!',
+				'OK' : function(){alert('haha');},
+				'OKText' : '点我'
+			});
+		};
+	</script>
+	
+	
+	<!--demo for dialog-->
+	<script type="text/javascript">
+		var testCfm = function(){
+			var a = STK.ui.confirm('这真的是一个测试', {
+				'title' : '我真的是测试啊',
+				'icon' : 'warn',
+				'textSmall' : '你妹啊!',
+				'OK' : function(){alert('haha');},
+				'OKText' : '点我',
+				'cancel' : function(){
+					STK.ui.alert('都说别点了', {
+						'title' : '我真的是测试啊',
+						'icon' : 'warn',
+						'textSmall' : '你妹啊!',
+						'OK' : testCfm,
+						'OKText' : '点我'
+					});
+				},
+				'cancelText' : '别点啊'
+			});
+		};
+	</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://img.wcdn.cn/t4/style/css/module/base/frame.css" type="text/css" rel="stylesheet" />
+<link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+
+<title>右上角用户资料</title>
+</head>
+
+<body>
+<!--个人信息-->
+<div id='pl_content_personInfo'>
+	
+</div>
+<!--/个人信息-->
+</body>
+ <script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js">
+</script>
+<script type="text/javascript" src="http://js.wcdn.cn/t4/home/js/pageletM.js">
+</script>
+<script>
+	STK.pageletM.view({
+		pid	: "pl_content_personInfo",
+		js	: ["home/js/pl/content/personInfo.js"],
+		css	: ["style/css/module/global/person_info.css",
+			   "style/css/module/global/person_count.css"] ,
+		html: 
+			'<div class="W_person_info" style="width:200px">'+
+				'<dl class="clearfix">'+
+					'<dt><a href="" title=""><img src="http://tp2.sinaimg.cn/1282005885/50/1283203874/1" alt=""  width="50" height="50" /></a></dt>'+
+					'<dd><a href="">遥小远遥小远遥小远ysdf<img src="http://js.wcdn.cn/t4/images/common/transparent.gif" alt="" class="approve"  width="11" height="10" /></a><div class="status">内蒙古-五个字地区</div></dd>'+
+				'</dl>'+
+			'</div>'+
+			'<div class="W_person_Num" style="width:200px">'+
+				'<ul class="clearfix">'+
+					'<li><a href="" class="left"><strong node-type="friends">1234</strong><span>关注</span></a></li>'+
+					'<li><a href="" class="right"><strong node-type="fans">10000000</strong><span>粉丝</span></a></li>'+
+					'<li><a href="" class="left"><strong node-type="friends">10000000</strong><span>好友</span></a></li>'+
+					'<li><a href="" class="right"><strong node-type="weibo">12345</strong><span>微博</span></a></li>'+
+				'</ul>'+
+			'</div>'
+	});
+</script>
+</html>

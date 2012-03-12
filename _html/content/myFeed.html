@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://img.wcdn.cn/t4/style/css/pages/index/index.css" type="text/css" rel="stylesheet" />
+<link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+<link href="http://img.wcdn.cn/t4/skin/white/ie6.css" type="text/css" rel="stylesheet" />
+<link href="http://img.wcdn.cn/t4/style/css/module/base/usually.css" type="text/css" rel="stylesheet" />
+<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_date_choose.css" rel="stylesheet" type="text/css" />
+<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_group_add.css" rel="stylesheet" type="text/css" />
+<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_forward.css" type="text/css" rel="stylesheet" />
+<link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+<title>我发表的微博</title>
+<script type="text/javascript">
+	var $CONFIG={
+		'uid' : '1820868023',
+		'bigpipe' : true
+	};
+</script>
+</head>
+
+<body class="B_index">
+		<div id="pl_content_myFeed">
+			<div id="Box_center" class="W_main_c" style="background: #FFF; padding-right: 30px;">
+			<!--分组阅读-->
+			<div node-type="feed_nav" class="newFilter W_texta">
+				<div class="nfTagB clearfix">
+					<ul node-type="feedType">
+						<li action-type="search_type" action-data="type=0" class="current"><span>全部</span></li>
+						<li class="W_vline">|</li>
+						<li action-type="search_type" action-data="type=1"><a href="/home?is_ori=1">原创</a></li>
+						<li class="W_vline">|</li>
+						<li action-type="search_type" action-data="type=2"><a href="/home?is_pic=1">图片</a></li>
+						<li class="W_vline">|</li>
+						<li action-type="search_type" action-data="type=3"><a href="/home?is_music=1">视频</a></li>
+						<li class="W_vline">|</li>
+						<li action-type="search_type" action-data="type=4"><a href="/home?is_video=1">音乐</a></li>
+					</ul>
+					<div class="search_input"><form node-type="singleForm" action="" method="get"><input node-type="keyword" type="text" class="W_input" value="搜索自己说的话" placeholder="搜索自己说的话" name="key_word"  style="color: rgb(153, 153, 153);" /> 
+						<a action-type="search_key" class="W_btn_a" href="#" onclick="return false;"><span>搜索</span></a>
+						<a action-type="search_adv" action-data="type=0" href="#" onclick="return false;">高级搜索</a></form>
+					</div>
+				</div>
+				<div node-type="search" style="display:none;" class="nfBox">
+					<div class="senSear">
+						<div class="title"><p class="left">高级搜索</p><a action-type="search_adv" action-data="type=1" href="#" onclick="return false;" class="right">关闭高级搜索</a></div>
+						<form node-type="searchForm" action="" method="get">
+							<dl class="s_type clearfix">
+								<dt>类&nbsp;&nbsp;&nbsp;&nbsp;型：</dt>
+								<dd>
+										<input type="checkbox" value="1" name="is_ori" id="is_ori" class="W_checkbox"/><label for="is_ori">原创</label>
+										<input type="checkbox" value="5" name="is_forward" id="is_forward" class="W_checkbox"/><label for="is_forward">转发</label>
+										<input type="checkbox" value="6" name="is_text" id="is_text" class="W_checkbox"/><label for="is_text">纯文字</label>
+										<input type="checkbox" value="2" name="is_pic" id="is_pic" class="W_checkbox"/><label for="is_pic">含图片</label>
+										<input type="checkbox" value="3" name="is_video" id="is_video" class="W_checkbox"/><label for="is_video">含视频</label>
+										<input type="checkbox" value="4" name="filter_music" id="filter_music" class="W_checkbox"/><label for="filter_music">含音乐</label>
+								</dd>
+							</dl>
+							<dl class="s_type s_key clearfix">
+								<dt>关键字：</dt>
+								<dd>
+									<input node-type="keyword" type="text" value="搜索自己说的话" class="W_input iw1" id="key_word" placeholder="搜索自己说的话" name="key_word" style="color: rgb(153, 153, 153);"/>
+								</dd>
+								<dt>时&nbsp;&nbsp;&nbsp;&nbsp;间：</dt>
+								<dd>
+									<input action-type="search_date" action-data="type=1" type="text" value="" class="W_input iw2" id="start_time" def="点击选择日期" name="start_time" style="color: rgb(153, 153, 153);" readonly="true"/><span class="txt">到</span><input action-type="search_date" action-data="type=2" type="text" value="2010-11-22" def="点击选择日期" class="W_input iw2" id="end_time" name="end_time" style="color: rgb(153, 153, 153);" readonly="true"/>
+								</dd>
+							</dl>
+							<dl class="s_type s_btn clearfix">
+								<dt>&nbsp;</dt>
+								<dd><a action-type="search_button" action-data="" href="#" class="W_btn_a" id="filter_adv_btn"><span>搜索</span></a>
+								<span node-type="advSearchErr" class="W_error"></span></dd>
+							</dl>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			<!--分组阅读-->
+			<div node-type="feed_list" pageNum="1" class="feed_lists W_linka W_texta">
+				<!--<a action-type="feed_list_newBar" class="notes" href="javascript:void(0);">有 20 条新微博，点击查看</a>-->
+				<!--<div action-type="feed_list_loading" class="W_loading"><span>正在加载，请稍后...</span></div>-->
+				<!--<div action-type="feed_list_loading" class="W_loading"><span>加载失败，<a href="javascript:void(0)">请重试</a></span></div>-->
+				<div class="counts"><span><a action-type="feed_list_toAllLink" href="javascript:void(0);">«返回查看全部</a></span>共搜索到 <strong>11</strong> 条微博</div>
+				<dl action-type="feed_list_item" mid="6736750675" class="feed_list clearfix">
+					<dt class="face"><a href="javascript:void(0);" title=""><img src="http://tp2.sinaimg.cn/1282005885/50/1283203874/1" alt="" width="50" height="50" /></a></dt>
+					<dd class="content MIB_linka"> 
+						<p node-type="feed_list_content"><a href="javascript:void(0);" title="">蔡康永<img src="http://img.wcdn.cn/t4/style/images/common/transparent.gif" alt="" class="approve"  width="11" height="10" /></a>「 天空 」這個名字，取得真好：它在那裡，但它卻是空的。。。嗯。。空的。。。</p>
+						<ul node-type="feed_list_media_prev" class="piclist clearfix">
+							<li>
+								<img action-type="feed_list_media_img" src="http://ss9.sinaimg.cn/thumbnail/66a4ae18g93d03c397518&690" alt="" class="bigcursor" />
+								<img class="loading_gif" src="http://img.wcdn.cn/t4/style/images/common/loading.gif" style="display:none;">
+							</li>
+						</ul>
+						<div node-type="feed_list_media_disp" style="display:none;"></div>
+						<p class="info W_linkb W_textb"><span><em class="hover"><a action-type="feed_list_delete" href="javascript:void(0);">删除</a><i class="W_vline">|</i></em><em class="hover"><a action-type="feed_list_favorite" href="javascript:void(0);">收藏</a><i class="W_vline">|</i></em><a action-type="feed_list_forward" href="javascript:void(0);">转发(123)</a><i class="W_vline">|</i><a action-type="feed_list_comment" href="javascript:void(0);">评论(123)</a></span><a node-type="feed_list_item_date" date="1298346002275" href="javascript:void(0);" class="date">今天 13:34</a> 来自 <a href="javascript:void(0);">新浪微博手机版</a></p>
+						<div node-type="feed_list_repeat" class="repeat" style="display:none;"></div>
+					</dd>
+				</dl>
+				<dl action-type="feed_list_item" mid="6896362141" class="feed_list feed_list_hover clearfix">
+					<dt class="face"><a href="" title=""><img src="http://tp2.sinaimg.cn/1282005885/50/1283203874/1" alt="" width="50" height="50" /></a></dt>
+					<dd class="content MIB_linka">
+						<p node-type="feed_list_content"><a href="" title="">蔡康永<img src="http://img.wcdn.cn/t4/style/images/common/transparent.gif" alt="" class="approve"  width="11" height="10" /></a>「 天空 」這個名字，取得真好：它在那裡，但它卻是空的。。。嗯。。空的。。。</p>
+						<dl class="comment">
+							<dt node-type="feed_list_forwardContent"><a href="" title="">蔡康永</a>：「 天空 」這個名字，取得真好：它在那裡，但它卻是空的。。。嗯。。空的。。。<span class="W_linkb"><a href="">原文转发(12231)</a><a href="">原文评论(2343)</a></span></dt>
+							<dd>
+								<ul node-type="feed_list_media_prev" class="piclist clearfix">
+									<li>
+										<img action-type="feed_list_media_img" isForward="1" src="http://ss5.sinaimg.cn/thumbnail/3e37de33t93f6dae09984&690" alt="" class="bigcursor" />
+										<img class="loading_gif" src="http://img.wcdn.cn/t4/style/images/common/loading.gif" style="display:none;"/>
+									</li>
+								</ul>
+							</dd>
+							<div node-type="feed_list_media_disp" style="display:none;"></div>
+						</dl>
+						<p class="info W_linkb W_textb"><span><em class="hover"><a action-type="feed_list_delete" href="javascript:void(0);">删除</a><i class="W_vline">|</i></em><em class="hover"><a action-type="feed_list_favorite" href="javascript:void(0);">收藏</a><i class="W_vline">|</i></em><a action-type="feed_list_forward" href="javascript:void(0);">转发(123)</a><i class="W_vline">|</i><a action-type="feed_list_comment" href="javascript:void(0);">评论(123)</a></span><a node-type="feed_list_item_date" date="1298346002275" href="javascript:void(0);" class="date">今天 13:34</a> 来自 <a href="javascript:void(0);">新浪微博手机版</a></p>
+						<div node-type="feed_list_repeat" class="repeat" style="display:none;"></div>
+					</dd>
+				</dl>
+				
+				<dl action-type="feed_list_item" mid="6896124915" class="feed_list clearfix">
+					<dt class="face"><a href="" title=""><img src="http://tp2.sinaimg.cn/1282005885/50/1283203874/1" alt="" width="50" height="50" /></a></dt>
+					<dd class="content MIB_linka">
+						<p node-type="feed_list_content"><a href="" title="">蔡康永<img src="http://img.wcdn.cn/t4/style/images/common/transparent.gif" alt="" class="approve"  width="11" height="10" /></a>「 天空 」這個名字，<span class="W_spetxt">取得真好</span>：它在那裡，但它卻是空的。。。嗯。。空的。。。</p>
+						<dl class="comment">
+							<dt node-type="feed_list_forwardContent"><a href="" title="">蔡康永</a>：「 天空 」這個名字，取得真好：它在那裡，但它卻是空的。。。嗯。。空的。。。 <a action-type="feed_list_media_video"  action-data="title=视频-23日官方综述 皇帝ttttttt&short_url=h5nBng&full_url=http://sinaurl.cn/h5nBng" isForward="1" href="http://sinaurl.cn/hqOmhV" target="_blank">http://sinaurl.cn/hqOmhV<span class="vedio"></span></a><a action-type="feed_list_media_music" action-data="title=music&short_url=hCL7tB&full_url=http://sinaurl.cn/hCL7tB" isForward="1" href="http://sinaurl.cn/hCL7tB" target="_blank">http://sinaurl.cn/hCL7tB<span class="music"></span></a><a href="http://sinaurl.cn/hqOmhV" target="_blank">http://sinaurl.cn/hqOmhV<span class="vote"></span></a><a href="http://sinaurl.cn/hqOmhV" target="_blank">http://sinaurl.cn/hqOmhV<span class="topic"></span></a><a action-type="feed_list_media_magic" href="http://sinaurl.cn/bR45b">http://sinaurl.cn/GZzaL<span class="magic"></span></a><span class="W_linkb"><a href="">原文转发(12231)</a><a href="">原文评论(2343)</a></span></dt>
+							<dd>
+								<ul node-type="feed_list_media_prev" class="piclist clearfix">
+									<li>
+										<img action-type="feed_list_media_img" isForward="1" src="http://ss9.sinaimg.cn/thumbnail/66a4ae18g93d03c397518&690" alt="" class="bigcursor" />
+										<img class="loading_gif" src="http://img.wcdn.cn/t4/style/images/common/loading.gif" style="display:none;"/>
+									</li>
+									<li>
+										<img src="http://ss9.sinaimg.cn/thumbnail/66a4ae18g93d03c397518&690"/>
+										<!--
+										<img action-type="feed_list_media_video" action-data="title=视频-23日官方综述 皇帝ttttttt&short_url=h5nBng&full_url=http://sinaurl.cn/h5nBng" isForward="1" class="video_play" src="http://img.wcdn.cn/t4/style/images/common/feedvideoplay.gif" style="top:19px;left:44px;"/>
+										-->
+									</li>
+									<li>
+										<a action-type="feed_list_media_music" action-data="title=music&short_url=hCL7tB&full_url=http://sinaurl.cn/hCL7tB" isForward="1" href="http://sinaurl.cn/hCL7tB"><img src="http://img.t.sinajs.cn/t3/style/images/index/music_s.gif" style="cursor: pointer;" class="imgicon"/></a>
+									</li>
+								</ul>
+							</dd>
+							<div node-type="feed_list_media_disp" style="display:none;"></div>
+						</dl>
+						<p class="info W_linkb W_textb"><span><em class="hover"><a action-type="feed_list_delete" href="javascript:void(0);" href="">删除</a><i class="W_vline">|</i><a action-type="feed_list_favorite" href="javascript:void(0);">收藏</a><i class="W_vline">|</i></em><a action-type="feed_list_forward" href="javascript:void(0);">转发(123)</a><i class="W_vline">|</i><a action-type="feed_list_forward" href="javascript:void(0);">评论(123)</a></span><a href="" class="date">今天 13:34</a> 来自<a href="">新浪微博手机版</a><em class="hover"><i class="W_vline">|</i><a href="javascript:void(0)">举报</a></em></p>
+						<div node-type="feed_list_repeat" class="repeat" style="display:none;"></div>
+					</dd>
+				</dl>
+				
+				<!--<div node-type="feed_list_page" class="W_pages"><a action-type="feed_list_page_first" href="javascript:void(0);" class="W_btn_a"><span>返回首页</span></a><a action-type="feed_list_page_pre" href="javascript:void(0);" class="W_btn_a"><span>上一页</span></a><span class="list"><div action-type="feed_list_page_morelist" style="display: none;"><a action-type="feed_list_page_n" href="javascript:void(0);">第&nbsp;3&nbsp;页</a><a action-type="feed_list_page_n" href="javascript:void(0);">第&nbsp;2&nbsp;页</a><a action-type="feed_list_page_n" href="javascript:void(0);" class="current">第&nbsp;1&nbsp;页</a></div><a action-type="feed_list_page_more" href="javascript:void(0)" class="W_moredown"><span class="txt">第&nbsp;1&nbsp;页</span><span class="more"></span></a></span><a action-type="feed_list_page_next" href="javascript:void(0);" class="W_btn_a"><span>下一页</span></a></div>-->
+			</div>
+		</div>
+		<script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js"></script>
+		<script type="text/javascript" src="http://dev.wcdn.cn/t4/home/js/base.js"></script>
+
+		<script type="text/javascript">
+			STK.pageletM.view({
+				"pid": "pl_content_myFeed",
+				"css": ['style\/css\/module\/global\/group_read.css',
+						'style\/css\/module\/global\/senior_search.css',
+						'style\/css\/module\/list\/feed.css',
+						'style\/css\/module\/global\/pages.css',
+						'style\/css\/module\/combination\/A_feed_function.css'], 
+				"js":["home\/js\/pl\/content\/myFeed.js"]
+			});
+		</script>
+	</body>
+</html>
+

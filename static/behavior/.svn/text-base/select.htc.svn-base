@@ -1,0 +1,121 @@
+/*
+描述:		select组件
+版本:		1.0
+作者:		FlashSoft
+创建日期:	2011-02-21
+备注:		拿着以前自己写的htc改写成select格式，只是简单支持select的模拟
+*/
+<public:component>
+<public:attach event="oncontentready" onevent="fnInit()" />
+<public:attach event="onpropertychange" onevent="fnPropertychange()" />
+<script language="JavaScript">
+
+function $(id) {
+	return window.document.getElementById(id);
+}
+function viewCurrSelect() {
+	var spanNode = element.parentNode.previousSibling;
+	var selectText = (element.selectedIndex >= 0)?element.options[element.selectedIndex].text:'';
+	var optsHTML = [];
+	var width = element.clientWidth - 13;
+	var currText, value;
+	var nodeRND = new Date().getTime();
+	for(var i = 0, len = element.options.length; i < len; i ++ ) {
+		currText = element.options[i].text;
+		value = element.options[i].value;
+		optsHTML.push('<a href="javascript:;" htc_select_curr_index="' + i + '" value="'+ value +'">' + currText +'</a>');
+	}
+	optsHTML = optsHTML.join('');
+	spanNode.innerHTML = '<table border="0" cellspacing="0" cellpadding="0" class="select" id="__htc_select_box_' + nodeRND + '" tabindex="' + this.tabIndex + '">' +
+	'	<thead>' +
+	'		<tr>' +
+	'			<td class="choose" id="__htc_select_title_' + nodeRND + '">' + selectText + '</td>' +
+	'			<td><a href="javascript:;" class="btn" id="__htc_select_arrow_' + nodeRND + '"></a></td>' +
+	'		</tr>' +
+	'	</thead>' +
+	'	<tbody>' +
+	'		<tr>' +
+	'			<td colspan="2"  width='+width+' style="line-height:0;font-size:0;" > </td>'+
+	'		</tr>' +
+	'		<tr style="display:none;" id="__htc_select_opts_' + nodeRND +'">' +
+	'			<td nowrap class="layer" colspan="2"><div style="position:absolute">' + optsHTML + '</div></td>'+
+	'		</tr>' +
+	'	</tbody>' +
+	'</table>';
+	var selectNode = element;
+	var boxNode = $('__htc_select_box_' + nodeRND);
+	var selectTitleNode = $('__htc_select_title_' + nodeRND);
+	var selectArrowNode = $('__htc_select_arrow_' + nodeRND);
+	var optsNode = $('__htc_select_opts_' + nodeRND);
+	var timer;
+	
+	boxNode.onblur = function () {
+		timer = setTimeout(function(){
+			optsNode.style.display = 'none';
+		},500)
+		
+	};
+
+	selectArrowNode.onclick = selectTitleNode.onclick = function() {
+		if(optsNode.style.display == 'none'){
+			showOpt();
+		}else{
+			closeOpt();
+		}
+	};
+
+	function showOpt(){
+		if(typeof timer != "undefined"){
+			clearTimeout(timer);
+		}
+		optsNode.style.display = 'block';
+		boxNode.focus();
+	}
+
+	function closeOpt(){
+		optsNode.style.display = 'none';
+	}
+
+	optsNode.onclick = function() {
+		var item = event.srcElement;
+		var currIndex = item.htc_select_curr_index;
+
+//		alert(currIndex);
+//		alert(selectNode.selectedIndex);
+		if(currIndex != selectNode.selectedIndex){
+				selectNode.selectedIndex = currIndex;
+		}
+
+		selectNode.fireEvent('onclick');
+		selectNode.fireEvent('onchange');
+		selectTitleNode.innerHTML = item.innerText;
+		optsNode.style.display = 'none';
+	};
+}
+
+function fnInit(){
+	if(element.tagName.toLowerCase() != "select"){return;}
+	if(element._htc_select_) {return;}
+	element._htc_select_ = true;
+	var selectNode = element;
+	var container = document.createElement('div');
+	var spanNode = document.createElement('div');
+	spanNode.className = "htc_input " ;
+	spanNode.style.margin = selectNode.currentStyle.margin;
+	this.insertAdjacentElement('afterEnd', spanNode);
+	container.appendChild(element);
+	spanNode.insertAdjacentElement('afterEnd',container);
+	viewCurrSelect();
+	container.style.display = 'none';
+}
+
+function fnPropertychange(){
+	if(element.tagName.toLowerCase() != "select"){return;}
+	switch(event.propertyName){
+		case 'selectedIndex':
+			setTimeout(viewCurrSelect,0);
+		break;
+	}
+}
+</script>
+</public:component>

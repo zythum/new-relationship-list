@@ -1,0 +1,10 @@
+$Import('pl.content.messageList');
+$Import('pl.content.messageDetail');
+$Import('pl.content.messageSearch');
+$Import('pl.content.top');
+$Import('pl.leftNav.common');
+$Import('pl.leftNav.app');
+$Import('pl.leftNav.game');
+$Import('pl.content.base');
+$Import('pl.content.changeLanguage');
+STK.pageletM.start();

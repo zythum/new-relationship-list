@@ -1,0 +1,20 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="http://js.wcdn.cn/t4/skin/white/ie6.css" type="text/css" rel="stylesheet" />
+<style>
+select {
+   _behavior: url("http://js.wcdn.cn/t4/home/static/behavior/select.htc");
+}
+</style>
+<button onclick="go()">go</button>
+<input tabindex=3>
+<input tabindex=2>
+<div id='box'>
+</div>
+<script>
+	var num = 1;
+	function go(){
+		box.innerHTML += '<div><select tabindex=1><option>' + num + '</option><option>aaaaaa</option></select></div>';
+		num ++;
+	}
+	go();
+</script>

@@ -1,0 +1,12 @@
+$Import('pl.content.commentList');
+$Import('pl.content.personInfo');
+$Import('pl.content.top');
+$Import('pl.leftNav.common');
+$Import('pl.leftNav.app');
+$Import('pl.leftNav.game');
+$Import('pl.content.base');
+$Import('pl.content.changeLanguage');
+//右侧模块
+$Import('pl.content.commentTopNav');
+$Import('pl.ad.backFill');
+STK.pageletM.start();

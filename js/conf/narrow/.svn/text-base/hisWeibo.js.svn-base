@@ -1,0 +1,16 @@
+//左导开始
+$Import('pl.leftNav.profileOpt');
+//左导结束
+$Import('pl.content.hisPersonalInfo');
+$Import('pl.content.hisFeed');
+$Import('pl.content.top');
+$Import('pl.content.litePersonInfo');
+$Import('pl.content.album');
+$Import('pl.content.base');
+$Import('pl.content.changeLanguage');
+$Import('pl.content.medal');
+$Import('pl.content.hisOperationPlate');
+$Import('pl.relation.recommendAttUsers');
+$Import('pl.content.topic');
+$Import('pl.content.profilerecommend');
+STK.pageletM.start();

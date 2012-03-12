@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>地理位置信息</title>
+		<link href="http://img.t.sinajs.cn/t4/style/css/module/base/usually.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.t.sinajs.cn/t4/style/css/module/layer/layer_map.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.t.sinajs.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+		<script src="http://maps.google.com/maps?file=api&v=2&sensor=true&key=ABQIAAAAx55U5g7DKx85XyqTah8SxRQ0DFsv_lJ5qfcoxEb2Fg3keXNcrRRIPM9cX6vl18gLwuZFzRxfrib28g" type="text/javascript"></script>
+        <script type="text/javascript" src="http://js.t.sinajs.cn/STK/js/gaea.1.09.js"></script>
+		<script type="text/javascript" src="http://js.t.sinajs.cn/t4/home/js/pl/map/gmap.js?version=3"></script>
+
+    </head>
+    <body style="margin:0px;padding:0px;overflow:hidden;">
+        <div class="layer_map" style="overflow:hidden;">
+			<a id="zoomIn" title="放大" style="z-index:1000;" class="map_zoomIn" id="zoomIn" href="javascript:;"></a>
+			<a id="zoomOut" title="缩小" style="z-index:1000;" class="map_zoomOut" id="zoomOut" href="javascript:;"></a>
+			<div id="wrap" style="width:400px;height:250px;"></div>
+        </div>
+    </body>
+</html>

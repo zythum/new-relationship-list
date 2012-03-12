@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="http://img.wcdn.cn/t4/style/css/module/base/usually.css" type="text/css" rel="stylesheet"/>
+    <link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_frame.css" type="text/css" rel="stylesheet"/>
+    <link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_pop.css" type="text/css" rel="stylesheet"/>
+    <link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_mini_info.css" type="text/css" rel="stylesheet"/>
+    <link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet"/>
+
+    <link href="../../../skin/default/skin.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js"></script>
+    <script type="text/javascript" src="http://js.wcdn.cn/t4/home/js/ui/tipFollow.js"></script>
+    <title>加关注组件</title>
+</head>
+
+<body>
+
+<div id="add" style="position:absolute;top:100px;left:100px;">
+    <div class="handle_btn">
+        <a href="javascript:void(0);" action-type="follow" title="加关注" class="W_btn_b"><span><img
+                class="icon_add addbtn_b" src="http://img.wcdn.cn/t4/style/images/common/transparent.gif">加关注</span></a>
+    </div>
+</div>
+
+<div id="add2" style="position:absolute;top:100px;left:400px;">
+    <div class="handle_btn">
+        <a href="javascript:void(0);" action-type="follow" title="加关注" class="W_btn_b"><span><img
+                class="icon_add addbtn_b" src="http://img.wcdn.cn/t4/style/images/common/transparent.gif">加关注</span></a>
+    </div>
+</div>
+
+<div id="del" style="position:absolute;top:100px;left:700px;">
+    <div class="W_addbtn_even">
+        <img src="http://img.wcdn.cn/t4/style/images/common/transparent.gif" title="加关注"
+             class="icon_add addbtn_d" alt=""/>已关注<span class="W_vline">|</span>
+        <a action-type="unfollow1" class="W_linkb" href="javascript:void(0);"><em>取消</em></a>
+    </div>
+</div>
+
+<div id="del2" style="position:absolute;top:100px;left:1000px;">
+    <div class="W_addbtn_even">
+        <img src="http://img.wcdn.cn/t4/style/images/common/transparent.gif" title="加关注"
+             class="icon_add addbtn_c" alt=""/>互相关注<span class="W_vline">|</span>
+        <a action-type="unfollow1" class="W_linkb" href="javascript:void(0);"><em>取消</em></a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var $ = STK.core.dom.sizzle;
+
+
+//    var aa = STK.ui.tipFollow($("#add2 .handle_btn")[0], "1816235717");
+        var aa=STK.ui.tipFollow($("#del .W_addbtn_even")[0],"1816235717");
+    //        aa.changNode($("#del2 .W_addbtn_even")[0],"22222");
+
+    //    STK.common.channel.follow.register('add', function() {
+    //        console.log(arguments);
+    //    });
+
+</script>
+</body>
+
+</html>

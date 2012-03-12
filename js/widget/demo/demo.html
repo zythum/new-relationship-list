@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>DEMO</title>
+		<style>
+			.form{
+				background-color: #000000;
+				width: 400px;
+				height: 400px;
+			}
+			.button{
+				vertical-align:middle;
+				text-align:center;
+				font-size:12px;
+				color:#FFFFFF;
+				width: 100px;
+				height: 20px;
+				line-height:20px;
+				border:1px #990 solid;
+				background-color:#ADADAD;
+				display:block;
+			}
+			.disabled{
+				background-color:#EBEBEB;
+			}
+			.error{
+				color:#ffffff;
+			}
+			.checkbox{
+				border:#fff solid 1px;
+				background-color:#EBEBEB;
+				width : 10px;
+				height: 10px;
+				line-height: 10px;
+			}
+			.checkbox1{
+				border:#ebebeb solid 1px;
+				background-color:#990;
+				width : 10px;
+				height: 10px;
+				line-height: 10px;
+			}
+			.dd{
+				background-color:#990000;
+			}
+			.enabled{
+				background-color:#990000;
+			}
+			.disabledClass{
+				background-color:#ebebeb;
+				color:#990000;
+				vertical-align:middle;
+				text-align:center;
+				font-size:12px;
+				width: 100px;
+				height: 20px;
+				line-height:20px;
+				border:1px #990 solid;
+				background-color:#ADADAD;
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+		<div component="widget.component.success">
+			<div id="holdit" class="form" component='widget.component.form' component-param="appkey=demo" component-data="a=1&b=2">
+				<input type="text" name="ff" value="2"/>	
+				<div component="widget.component.buttonGroup" component-param="max=3&min=1">
+					<input type="radio" name="cs" value="1"/>
+					<input type="radio" name="cs" value="1"/>
+					<input type="radio" name="cs" value="1"/>
+					<input type="checkbox" name="cs" value="1"/>
+					<input type="checkbox" name="cs" value="2"/>
+					<input type="checkbox" name="cs" value="3"/>
+					<input type="checkbox" name="cs" value="4"/>
+					<input type="checkbox" name="cs" value="5"/>
+					<input type="checkbox" name="cs" value="6"/>
+					<input type="checkbox" name="cs" value="7"/>
+				</div>
+				<a href="#" onclick="return false;" class="button" component='widget.component.submit' component-param="disabled=1&enabledClass=button&disabledClass=disabledClass">提 交</a>
+				<div  class="error" component="widget.component.fail"></div>
+			</div>
+		</div>
+		<div component="widget.component.success">
+			<div id="holdit" class="form" component='widget.component.form' component-param="appkey=demo" component-data="a=1&b=2">
+				<input type="text" name="ff" value="2"/>	
+				<div component="widget.component.buttonGroup" component-param="max=1&min=1">
+					<div component="widget.component.radio" component-param="class=checkbox&selectClass=checkbox1&disabledClass=dd" name="cs" value="1">1</div>
+					<div component="widget.component.radio" component-param="class=checkbox&selectClass=checkbox1&disabledClass=dd" name="cs" value="1">2</div>
+					<div component="widget.component.radio" component-param="class=checkbox&selectClass=checkbox1&disabledClass=dd" name="cs" value="1">3</div>
+				</div>
+				<a href="#" onclick="return false;" class="button" component='widget.component.submit' component-param="disabled=1&enabledClass=button&disabledClass=disabledClass">提 交</a>
+				<div class="error" component="widget.component.fail"></div>
+			</div>
+		</div>
+	</body>
+	<script src="http://10.210.74.54/STK/js/gaea.1.14.js" type="text/javascript" ></script>
+	<script src="http://10.210.74.54/t4/home/js/widget/parse.js" type="text/javascript" ></script>
+	<script>
+		var $ = STK, widget;
+		window.onload = function(){
+			widget = $.widget.parse(document.body, {
+				'baseURL' : 'http://10.210.74.54/t4/home/js/'
+			});
+			widget.init()
+		}
+	</script>
+</html>

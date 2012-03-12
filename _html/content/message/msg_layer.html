@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>msg</title>
+		<link href="http://img.wcdn.cn/t4/style/css/module/base/usually.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_frame.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_private_letter.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js?bbb"></script>
+		<script type="text/javascript" src="http://img.wcdn.cn/t4/home/js/demoOfCommon/msg.js?aaa"></script>
+		
+    </head>
+	<body>
+		<script type="text/javascript" charset="utf-8">
+		var $CONFIG = {};
+
+			 
+			$CONFIG['oid'] = "1786858177";
+			$CONFIG['onick'] = "Kuma_Wukan";
+			$CONFIG['uid'] = "1786858177";
+			$CONFIG['nick'] = "Kuma_Wukan";
+			$CONFIG['isLogin'] = 1;
+
+			$CONFIG['bigpipe'] = 'true';
+			$CONFIG['timeDiff'] = (new Date() - 1303716704000);
+			$CONFIG['product'] = 'v4mblog';
+			$CONFIG['pageid'] = 'content_home';
+			$CONFIG['skin'] = '';
+			$CONFIG['lang'] = 'zh-cn';
+			$CONFIG['jsPath'] = 'http://js.wcdn.cn/t4/';
+			$CONFIG['cssPath'] = 'http://img.wcdn.cn/t4/';
+			$CONFIG['imgPath'] = 'http://img.wcdn.cn/t4/';	
+	
+		</script>
+    	<button onclick="testDialogForward()">click me!</button>
+    </body>
+	<script type="text/javascript">
+		var testDialogForward = function(){
+			var a = STK.common.dialog.msg();
+			a.show('test',{'reason':'testtest','forwardNick':'aaa'});
+		};
+	</script>
+</html>

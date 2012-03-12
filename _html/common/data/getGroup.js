@@ -1,0 +1,1 @@
+{"code":"100000","data":[{'gid':'1233245345', 'gname':'AAAA', 'belong': 1},{'gid':'1233245345', 'gname':'BBBB', 'belong': 1},{'gid':'1233245345', 'gname':'qeqwqw'},{'gid':'1233245345', 'gname':'DDDD'}]}

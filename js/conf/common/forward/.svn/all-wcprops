@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/weibo/!svn/ver/296694/ria/t4/home/dev/trunk/js/common/forward
+END
+toPrivateMsg.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/weibo/!svn/ver/296694/ria/t4/home/dev/trunk/js/common/forward/toPrivateMsg.js
+END
+toMail.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/weibo/!svn/ver/244086/ria/t4/home/dev/trunk/js/common/forward/toMail.js
+END
+toMicrogroup.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/weibo/!svn/ver/244086/ria/t4/home/dev/trunk/js/common/forward/toMicrogroup.js
+END
+publisher.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/weibo/!svn/ver/268685/ria/t4/home/dev/trunk/js/common/forward/publisher.js
+END
+toMicroblog.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/weibo/!svn/ver/281467/ria/t4/home/dev/trunk/js/common/forward/toMicroblog.js
+END

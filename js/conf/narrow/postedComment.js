@@ -1,0 +1,11 @@
+$Import('pl.content.postedComment');
+$Import('pl.content.personInfo');
+$Import('pl.content.top');
+$Import('pl.content.leftNav');
+$Import('pl.content.base');
+$Import('pl.content.commentTopNav');
+$Import('pl.content.changeLanguage');
+$Import('pl.content.medal');
+$Import('pl.ad.backFill');
+$Import('pl.content.setSkin');
+STK.pageletM.start();

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/weibo/!svn/ver/298502/ria/t4/home/dev/trunk/js/common/depand
+END
+tasks.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/weibo/!svn/ver/251199/ria/t4/home/dev/trunk/js/common/depand/tasks.js
+END
+editor.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/weibo/!svn/ver/254151/ria/t4/home/dev/trunk/js/common/depand/editor.js
+END
+homeInterest.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/weibo/!svn/ver/214311/ria/t4/home/dev/trunk/js/common/depand/homeInterest.js
+END
+asynSendMsg.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/weibo/!svn/ver/214311/ria/t4/home/dev/trunk/js/common/depand/asynSendMsg.js
+END
+recommendPopularUsers.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/weibo/!svn/ver/214311/ria/t4/home/dev/trunk/js/common/depand/recommendPopularUsers.js
+END
+mood.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/weibo/!svn/ver/265082/ria/t4/home/dev/trunk/js/common/depand/mood.js
+END
+setSkin.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/weibo/!svn/ver/219451/ria/t4/home/dev/trunk/js/common/depand/setSkin.js
+END
+asynUserCard.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/weibo/!svn/ver/214311/ria/t4/home/dev/trunk/js/common/depand/asynUserCard.js
+END
+feed.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/weibo/!svn/ver/298502/ria/t4/home/dev/trunk/js/common/depand/feed.js
+END

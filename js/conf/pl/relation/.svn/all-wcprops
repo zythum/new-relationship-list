@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/pl/relation
+END
+hisFollow.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/weibo/!svn/ver/251109/ria/t4/home/dev/trunk/js/pl/relation/hisFollow.js
+END
+fans.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/weibo/!svn/ver/251109/ria/t4/home/dev/trunk/js/pl/relation/fans.js
+END
+publicGroupInfo.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/pl/relation/publicGroupInfo.js
+END
+publicGroupList.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/pl/relation/publicGroupList.js
+END
+publicGroupGuide.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/pl/relation/publicGroupGuide.js
+END
+quietFollow.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/weibo/!svn/ver/271252/ria/t4/home/dev/trunk/js/pl/relation/quietFollow.js
+END
+hisFans.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/weibo/!svn/ver/251109/ria/t4/home/dev/trunk/js/pl/relation/hisFans.js
+END
+publicGroupFeed.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/pl/relation/publicGroupFeed.js
+END
+follow.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/weibo/!svn/ver/251109/ria/t4/home/dev/trunk/js/pl/relation/follow.js
+END
+publicGroupMember.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/pl/relation/publicGroupMember.js
+END

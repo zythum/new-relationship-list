@@ -1,0 +1,27 @@
+.lamp .lamp_on {
+	width:210px;height:420px;
+    background: url(http://js.wcdn.cn/t4/home/_html/style/images/lamp_on.png) no-repeat;
+}
+.lamp .lamp_off {
+	width:210px;height:420px;
+    background: url(http://js.wcdn.cn/t4/home/_html/style/images/lamp_off.png) no-repeat;
+}
+
+.lamp .eSwitch {
+    position: absolute;
+    top: 50px;
+    left: 81px;
+	cursor:pointer;
+}
+
+.lamp .eSwitch .open {
+    display: none;
+}
+
+.lamp .eSwitch .close {
+    display: none;
+}
+
+#js_home__html_style_lamp {
+    height: 42px;
+}

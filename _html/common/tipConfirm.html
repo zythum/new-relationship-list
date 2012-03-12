@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="http://img.wcdn.cn/t4/style/css/module/base/usually.css" type="text/css" rel="stylesheet"/>
+    <link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_frame.css" type="text/css" rel="stylesheet"/>
+    <link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_mini_info.css" type="text/css" rel="stylesheet"/>
+    <link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js"></script>
+    <script type="text/javascript" src="http://js.wcdn.cn/t4/home/js/ui/tipConfirm.js"></script>
+    <title>tip测试</title>
+</head>
+<body>
+<button class="tipBtnUp" style="width:120px;height:30px;position:absolute;left:200px;top:100px;">测试按钮up</button>
+<button class="tipBtnUp" style="width:120px;height:30px;position:absolute;left:200px;top:250px;">测试按钮up</button>
+<button class="tipBtnUp" style="width:120px;height:30px;position:absolute;left:200px;top:400px;">测试按钮up</button>
+
+<button class="tipBtnDown" style="width:120px;height:30px;position:absolute;left:600px;top:100px;">测试按钮down</button>
+<button class="tipBtnDown" style="width:120px;height:30px;position:absolute;left:600px;top:250px;">测试按钮down</button>
+<button class="tipBtnDown" style="width:120px;height:30px;position:absolute;left:600px;top:400px;">测试按钮down</button>
+
+<script type="text/javascript">
+    var $ = STK.core.dom.sizzle;
+    var tipBtnUp = $(".tipBtnUp");
+    var tipBtnDown = $(".tipBtnDown");
+
+    var tipd = STK.ui.tipConfirm({
+//        okCallback:function() {
+//           alert("按了确定");
+//        },
+//        cancelCallback:function() {
+//            alert("按了取消");
+//        }
+        direct:'down'
+    });
+
+    var tipu = STK.ui.tipConfirm({
+//            direct:'up'
+//         template:"<p>fuck</p>"
+    });
+
+    for (var i = 0,len = tipBtnUp.length; i < len; i++) {
+        tipBtnUp[i].onclick = function() {
+            tipu.setLayerXY(this);
+            tipu.aniShow();
+        }
+    }
+
+    for (var i = 0,len = tipBtnDown.length; i < len; i++) {
+        tipBtnDown[i].onclick = function() {
+            tipd.setLayerXY(this);
+            tipd.aniShow();
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

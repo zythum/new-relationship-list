@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/weibo/!svn/ver/298321/ria/t4/home/dev/trunk/js/conf/relation
+END
+hisFollow.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/weibo/!svn/ver/251109/ria/t4/home/dev/trunk/js/conf/relation/hisFollow.js
+END
+myFollow.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/weibo/!svn/ver/251109/ria/t4/home/dev/trunk/js/conf/relation/myFollow.js
+END
+quietFollow.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/weibo/!svn/ver/282267/ria/t4/home/dev/trunk/js/conf/relation/quietFollow.js
+END
+hisFans.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/weibo/!svn/ver/251109/ria/t4/home/dev/trunk/js/conf/relation/hisFans.js
+END
+hisPublicGroupInfo.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/conf/relation/hisPublicGroupInfo.js
+END
+myFans.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/weibo/!svn/ver/251109/ria/t4/home/dev/trunk/js/conf/relation/myFans.js
+END
+myPublicGroupInfo.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/conf/relation/myPublicGroupInfo.js
+END
+hisPublicGroup.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/conf/relation/hisPublicGroup.js
+END
+myPublicGroup.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/conf/relation/myPublicGroup.js
+END

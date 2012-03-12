@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> 设置备注名 </title>
+		<link href="http://img.wcdn.cn/t4/style/css/module/base/usually.css" type="text/css" rel="stylesheet" />
+
+		<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_frame.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_point.css" type="text/css" rel="stylesheet" />
+
+		<link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="http://dev.wcdn.cn/STK/js/gaea.js"></script>
+		<script type="text/javascript" src="http://dev.wcdn.cn/t4/home/js/demoOfCommon/setRemark.js"></script>
+		<script type="text/javascript" src="http://dev.wcdn.cn/t4/home/js/demoOfCommon/groupAdd.js"></script>
+	</head>
+	<body>
+		<div style="height:450px;width:800px;margin:0px auto;">
+			<input id="setRemark" type="button" value="设置备注名" />
+			<input id="groupAdd" type="button" value="创建分组" />
+		</div>
+	<!--demo for dialog-->
+	<script type="text/javascript">
+		var setRemark = STK.E('setRemark');
+		setRemark.onclick = function () {
+			STK.common.dialog.setRemark({
+				'uid'		: 1406758883,	// 必选，改哪个 UID 的备注
+				'remark'	: '笨查理',		// 可选，原来的备注名
+				'callback'	: function (data){	// 可选，改成功后的回调函数，用修改后的备注名回调
+					setRemark.value = '新备注名是：' + data;
+				}
+			});
+		};
+		
+		var groupAdd = STK.E('groupAdd');
+		groupAdd.onclick = function () {
+			STK.common.dialog.relationGroupAdd(function (data) {
+				groupAdd.value = '新分组名是：' + data
+			});
+		};
+	</script>
+	</body>
+</html>

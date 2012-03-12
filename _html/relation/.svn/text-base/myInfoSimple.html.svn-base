@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="http://img.wcdn.cn/t4/style/css/pages/index/index.css" type="text/css" rel="stylesheet" />
+        <link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+        <title>我的信息</title>
+    </head>
+    <body class="B_one_feed">
+        <!--##顶部导航##**module/nav/global_nav.html**-->
+        <div class="perAll_info" id="pl_relation_myInfoSimple">
+        </div>
+    </body>
+    <script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js">
+    </script>
+    <script type="text/javascript" src="http://js.wcdn.cn/t4/home/js/base.js">
+    </script>
+    <script type="text/javascript">
+        STK.pageletM.view({
+            "pid": "pl_relation_myInfoSimple",
+            "html": '<div class="name clearfix"><div class="left">小秦同学<img title="新浪认证" class="approve" src="../../../images/common/transparent.gif"></div></div><!--在线--><p><span class="IM_online"></span>在线<a href="#" class="online">http://t.sina.com.cn/xiaoqq</a></p><!--在线--><!--忙碌--><!--<p><span class="IM_busy"></span>忙碌<a class="online" href="#">http://t.sina.com.cn/xiaoqq</a></p>--><!--在线--><!--在线--><!--<p><span class="IM_away"></span>离开<a class="online" href="#">http://t.sina.com.cn/xiaoqq</a></p>--><!--在线-->'
+        });
+    </script>
+</html>

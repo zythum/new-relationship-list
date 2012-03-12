@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="http://img.wcdn.cn/t4/style/css/pages/setup/setup.css" type="text/css" rel="stylesheet" />
+        <link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+        <title></title>
+    </head>
+    <body class="B_basic_info">
+        <div id="pl_content_setting_receivingAddress">
+            <div class="W_main_2col_r">
+                <!--两列结构-->
+                <div class="index_title">
+                    <!--this page title--><h3>收货地址</h3>
+                    <h4>如果你在微博活动中获得了奖品，我们将按照以下收货人信息发送奖品，所以请填写真实的收货信息。</h4>
+                    <!--/this page title-->
+                </div>
+                <div class="form_table">
+                    <dl class="clearfix">
+                        <dt>
+                            <span class="must CH W_spetxt">*</span>收货人姓名：
+                        </dt>
+                        <dd class="conbox">
+                            <input type="text" class="W_inputStp" node-type="realName" name="realName">
+                        </dd>
+                        <dd class="tipbox" node-type="red_realName">
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>
+                            <span class="must CH W_spetxt">*</span>证件类型：
+                        </dt>
+                        <dd class="conbox">
+                            <select class="select" node-type="idCard_select">
+                                <option value="1">身份证</option>
+                                <option value="4">护照</option>
+                            </select>
+                        </dd>
+                        <dd class="tipbox">
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>
+                            <span class="must CH W_spetxt">*</span>证件号码：
+                        </dt>
+                        <dd class="conbox">
+                            <input type="text" class="W_inputStp" node-type="idCard">
+                        </dd>
+                        <dd class="tipbox"  node-type="red_idCard">
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>
+                            <span class="must CH W_spetxt">*</span>所在地：
+                        </dt>
+                        <dd class="conbox">
+                            <select class="select">
+                                <option>中国</option>
+                            </select>
+                            <select class="select">
+                                <option>北京</option>
+                            </select>
+                            <select class="select">
+                                <option>朝阳</option>
+                            </select>
+                        </dd>
+                        <dd class="tipbox">
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>
+                            <span class="must CH W_spetxt">*</span>详细地址：
+                        </dt>
+                        <dd class="conbox">
+                            <textarea class="W_inputStp T_area" node-type="address">
+                            </textarea>
+                        </dd>
+                        <dd class="tipbox"  node-type="red_address">
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>
+                            <span class="must CH W_spetxt">*</span>邮政编码：
+                        </dt>
+                        <dd class="conbox">
+                            <input type="text" class="W_inputStp"  node-type="zipcode">
+                        </dd>
+                        <dd class="tipbox"  node-type="red_zipcode">
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>
+                            <span class="must CH W_spetxt">*</span>联系电话：
+                        </dt>
+                        <dd class="conbox">
+                            <input type="text" class="W_inputStp" node-type="mobile">
+                        </dd>
+                        <dd class="tipbox" node-type="red_mobile">
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>
+                            送货时间：
+                        </dt>
+                        <dd class="conbox">
+                            <input type="text" class="W_inputStp">
+                        </dd>
+                        <dd class="tipbox">
+                        </dd>
+                    </dl>
+                    <dl class="p_btn clearfix">
+                        <dt>
+                            &nbsp;
+                        </dt>
+                        <dd>
+                            <a class="W_btn_d" href="javascript:;" node-type="submit"><span>保存</span></a>
+                        </dd>
+                    </dl>
+                </div>
+                <!--/两列结构-->
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js">
+    </script>
+    <script type="text/javascript" src="http://js.wcdn.cn/t4/home/js/base.js">
+    </script>
+    <script>
+        STK.pageletM.view({
+        	pid: "pl_content_setting_receivingAddress",
+        	js: ["home/js/pl/content/setting/receivingAddress.js"]
+        });
+    </script>
+</html>

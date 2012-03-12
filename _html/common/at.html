@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>home</title>
+		<link href="http://10.210.74.54/t4/style/css/pages/index/index.css" rel="stylesheet"/>
+		<link href="http://10.210.74.54/t4/style/skin/default/skin.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.54/t4/style/skin/white/ie6.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="http://10.210.74.54/STK/js/gaea.js"></script>
+		<script type="text/javascript" src="http://10.210.74.54/t4/home/js/demo212/at.js"></script>
+		
+    </head>
+    <body>
+    	<div id="Box_center" class="W_main_c">
+			<div class="send_weibo">
+				<div class="input" style="display:block;"><textarea id="testarea" style="border:1px solid #000000;" name="">asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfa@</textarea></div>
+				<div class="btn"><a class="disable" href=""></a></div>
+				<div class="kind"><a class="face" href="">表情</a><a class="img" href="">图片</a><a class="movie" href="">视频</a><a class="music" href="">音乐</a><a class="topic" href="">话题</a><a class="vote" href="">投票</a></div>
+			</div>	
+		</div>
+    </body>
+	<script type="text/javascript">
+		var textarea = STK.E("testarea");
+		var sugg = STK.C('div');
+			document.body.appendChild(sugg);
+		var at = STK.module.at({'textEl':textarea});
+		STK.custEvent.add(at, 'hidden', function(type,data){
+			sugg.style.display="none";
+	 	});
+	 	STK.custEvent.add(at, 'at', function(type,data){
+			if(!data.key){sugg.style.display="none";return;}
+	 		sugg.innerHTML = data.key;
+	 		sugg.style.cssText = ['z-index:1001;background-color:#ffffff;border:1px solid #000000;position:absolute;left:',data.l,'px;top:',data.t,'px;'].join('');
+	 	});
+	</script>
+</html>

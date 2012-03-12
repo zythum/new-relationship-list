@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>layoutPosition</title>
+		<link href="http://10.210.74.52/t4/style/css/module/base/usually.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/style/css/module/forms/send_weibo.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/style/css/module/layer/layer_send_weibo.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/style/css/module/layer/layer_frame.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/style/css/module/layer/layer_point.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="http://10.210.74.52/STK/js/gaea.js"></script>
+		<script type="text/javascript" src="http://10.210.74.52/t4/home/js/demoOfCommon/dialogPublish.js"></script>
+		
+    </head>
+    <body>
+		<button onclick="testDialogPublish()">click me!</button>
+		<div style="border:1px solid red;width:200px;height:200px" id="layout"></div>
+    </body>
+	<!--demo for dialogPublish-->
+	<script type="text/javascript">
+		var testDialogPublish = function(){
+			var a = STK.common.dialog.publish();
+			a.show({
+				'defaultValue' : 'test',
+				'content' : 'test2'
+			});
+			// console.log(STK.sizzle('div[node-type=outer]')[1]);
+			setTimeout(function(){
+				STK.kit.dom.layoutPos(STK.E('layout'), STK.sizzle('a[node-type=smileyBtn]')[0]);
+			},2000);
+			
+		};
+	</script>
+</html>

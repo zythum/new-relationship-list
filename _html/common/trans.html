@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>home</title>
+		<link href="http://10.210.74.52/t4/style/css/module/base/usually.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/style/css/module/layer/layer_frame.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/style/css/module/layer/layer_point.css" type="text/css" rel="stylesheet" />
+		<link href="http://10.210.74.52/t4/style/skin/default/skin.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="http://10.210.74.52/STK/js/gaea.js"></script>
+		<script type="text/javascript" src="http://10.210.74.52/t4/home/js/demoOfCommon/trans.js"></script>
+    </head>
+    <body>
+		<button onclick="testAjax()">I am ajax</button>
+		<button onclick="testJsonp()">I am jsonp</button>
+		<button onclick="test()">I am fuck</button>
+		<button onclick="testIjax()">I am fuck</button>
+		<form method="post" id="tIjax">
+			<input type="text" name="aaa" value="ccc" />
+		</form>
+    </body>
+	<!--demo trans-->
+	<script type="text/javascript">
+		var trans = (function(){
+			var t = STK.kit.io.inter();
+			var g = t.register;
+			
+			g('testAjax', {'url' : '/t4/home/_html/common/data/testAjax.js','method' : 'post'});
+			g('testJsonp',{'url' : '/t4/home/_html/common/data/testJsonp.js','method' : 'get', 'requestMode' : 'jsonp'});
+			return t;
+		})();
+	</script>
+	
+	<!--demo ajax-->
+	<script type="text/javascript">
+		var testAjax = function(){
+			var t = trans.getTrans('testAjax',{
+				'onComplete' : function(ret,params){
+					alert(ret.data);
+				}
+			});
+			t.request({});
+		};
+	</script>
+	
+	<!--demo ajax-->
+	<script type="text/javascript">
+		var testJsonp = function(){
+			var t = trans.getTrans('testJsonp',{
+				'onComplete' : function(){
+					alert('test');
+				},
+				'onError' : function(){
+					alert('error');
+				}
+			});
+			t.request({});
+		};
+	</script>
+	
+	<script type="text/javascript">
+		var test = function(){
+			var a = STK.ajax({
+				'url' : '/t4/home/_html/common/data/testAjax.js',
+				'onFail' : function(trans){
+					console.log(trans);
+				}
+			});
+			a.abort();
+			console.log(a);
+		};
+	</script>
+	
+	<script type="text/javascript">
+		var testIjax = function(){
+			STK.core.io.ijax({
+				'url' : '/t4/home/_html/common/data/testAjax.js',
+				'form' : STK.E('tIjax'),
+				'abaurl' : 'http://t.sina.com.cn?a=1',
+				'abakey' : 'fuck'
+			});
+		};
+	</script>
+	
+</html>

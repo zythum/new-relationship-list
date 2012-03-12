@@ -1,0 +1,9 @@
+$Import('pl.content.top');
+$Import('pl.content.base');
+$Import('pl.content.changeLanguage');
+$Import('pl.leftNav.relation');
+$Import('pl.relation.publicGroupInfo');
+$Import('pl.relation.publicGroupFeed');
+$Import('pl.relation.publicGroupMember');
+$Import('pl.leftNav.profileOpt');
+STK.pageletM.start();

@@ -1,0 +1,9 @@
+$Import('pl.content.atMeWeibo');
+$Import('pl.content.top');
+$Import('pl.content.personInfo');
+$Import('pl.content.base');
+$Import('pl.content.changeLanguage');
+$Import('pl.content.medal');
+$Import('pl.content.setSkin');
+$Import('pl.ad.backFill');
+STK.pageletM.start();

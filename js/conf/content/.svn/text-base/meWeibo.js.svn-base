@@ -1,0 +1,10 @@
+$Import('pl.content.atMeWeibo');
+$Import('pl.content.top');
+$Import('pl.leftNav.common');
+$Import('pl.leftNav.app');
+$Import('pl.leftNav.game');
+$Import('pl.content.personInfo');
+$Import('pl.content.base');
+$Import('pl.content.changeLanguage');
+$Import('pl.ad.backFill');
+STK.pageletM.start();

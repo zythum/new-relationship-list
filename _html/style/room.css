@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+html{color:#000;font-family:Arial, Helvetica, sans-serif;font-size:12px;}
+body,div{margin:0;padding:0;border: 0;outline: 0;}
+img{border:0;}
+a{text-decoration: none;}
+a:hover{text-decoration:underline;}
+body{color:#333;}
+
+.room{position:relative; background:url(http://js.wcdn.cn/t4/home/_html/style/images/bg1.jpg) no-repeat;}
+.tv{position:absolute;left:450px;top:277px;width:377px;height:250px;}
+.lamp{position:absolute;left:971px;top:268px;}
+.sofa{position:absolute;left:185px;bottom:135px}
+

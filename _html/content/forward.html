@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/base/frame.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/forms/feed_repeat.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/list/feed.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/list/comment_list.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_forward.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_faces.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/global/pages.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_send_pic.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_menu_list.css" type="text/css" rel="stylesheet" />
+		<link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+		<title>转发层</title>
+	</head>
+
+	<body>
+		<div id="demoOfCommon_forward" style="height:450px;width:800px;margin:0px auto;padding:30px 0 0;">
+		</div>
+		<script type="text/javascript" src="/STK/js/gaea.js"></script>
+		<script type="text/javascript">
+			var $CONFIG = {};
+
+			$CONFIG['oid'] = "1343736725";
+			$CONFIG['onick'] = "node-js";
+			$CONFIG['uid'] = "1343736725";
+			$CONFIG['nick'] = "node-js";
+			$CONFIG['isLogin'] = 1;
+
+			$CONFIG['bigpipe'] = 'true';
+			$CONFIG['timeDiff'] = (new Date() - 1303797875000);
+			$CONFIG['product'] = 'v4mblog';
+			$CONFIG['pageid'] = 'content_home';
+			$CONFIG['skin'] = '';
+			$CONFIG['lang'] = 'zh-cn';
+			$CONFIG['jsPath'] = 'http://js.wcdn.cn/t4/';
+			$CONFIG['cssPath'] = 'http://img.wcdn.cn/t4/';
+			$CONFIG['imgPath'] = 'http://img.wcdn.cn/t4/';
+		</script>
+		<script type="text/javascript" src="/t4/home/js/base.js"></script>
+
+		<script type="text/javascript" charset="utf-8">
+			STK.pageletM.view({
+				"html": '<button node-type="layerBtn">转发</button><p>私信给：<input type="text" node-type="followList" /></p>',
+				"pid": "demoOfCommon_forward",
+				"css": ['style\/css\/module\/forms\/send_weibo.css'],
+				"js":["home\/js\/_demoOfCommon\/forward.js"]
+			});
+		</script>
+	</body>
+</html>
+

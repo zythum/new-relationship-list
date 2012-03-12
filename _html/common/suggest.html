@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Untitled Document</title>
+		<script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js"></script>
+		<script type="text/javascript" src="http://js.wcdn.cn/t4/home/js/demo212/suggest.js"></script>
+	</head>
+	<body>
+		<textarea id="textarea"></textarea>
+		<ul id="suggestWrap" style="display:none">
+			<li action-type="item" action-data="index=0">11111</li>
+			<li action-type="item" action-data="index=1">22222</li>
+			<li action-type="item" action-data="index=2">33333</li>
+			<li action-type="item" action-data="index=3">44444</li>
+			<li action-type="item" action-data="index=4">55555</li>
+		</ul>
+	</body>
+	<script>
+		var $ = STK;
+		var suggest = $.module.suggest({
+			'textNode': $.E('textarea'),
+			'uiNode'  : $.E('suggestWrap'),
+			'actionType' : 'item',
+			'actionData' : 'index'
+		});
+		var list = $.sizzle("li",$.E("suggestWrap"));
+		var data = ['王亮是猪', '永林是猪', '方超是猪', '小七是猪', '以上都是猪']
+		var oldIndex = 0;
+		var setIndex = function(index){
+			list[oldIndex].style.cssText = "";
+			list[index].style.backgroundColor="#00ff00";
+			oldIndex = index;
+		}
+		$.custEvent.add(suggest, 'onIndexChange', function(event, index){
+			setIndex(index)
+		})
+		$.custEvent.add(suggest, 'onSelect', function(event, index){
+			console.log(data[index]);
+			$.custEvent.fire(suggest, 'close');
+		})
+		$.custEvent.add(suggest, 'onClose', function(event, index){
+			$.E('suggestWrap').style.display = "none";
+		})
+		$.custEvent.add(suggest, 'onOpen', function(event, index){
+			$.E('suggestWrap').style.display = "";
+		})
+		$.addEvent($.E('textarea'), 'focus', function(){
+			$.custEvent.fire(suggest, 'open');
+		})
+	</script>
+</html>

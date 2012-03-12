@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/common/feed/groupAndSearch
+END
+hisFeedDelegateEvent.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/weibo/!svn/ver/294823/ria/t4/home/dev/trunk/js/common/feed/groupAndSearch/hisFeedDelegateEvent.js
+END
+myFeedDelegateEvent.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/weibo/!svn/ver/294823/ria/t4/home/dev/trunk/js/common/feed/groupAndSearch/myFeedDelegateEvent.js
+END
+hisFeed.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/weibo/!svn/ver/80699/ria/t4/home/dev/trunk/js/common/feed/groupAndSearch/hisFeed.js
+END
+homeFeedDelegateEvent.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/common/feed/groupAndSearch/homeFeedDelegateEvent.js
+END
+myFeed.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/weibo/!svn/ver/255002/ria/t4/home/dev/trunk/js/common/feed/groupAndSearch/myFeed.js
+END
+homeFeed.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/weibo/!svn/ver/264170/ria/t4/home/dev/trunk/js/common/feed/groupAndSearch/homeFeed.js
+END
+tagListener.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/weibo/!svn/ver/248924/ria/t4/home/dev/trunk/js/common/feed/groupAndSearch/tagListener.js
+END
+groupListener.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/weibo/!svn/ver/132271/ria/t4/home/dev/trunk/js/common/feed/groupAndSearch/groupListener.js
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/weibo/!svn/ver/195110/ria/t4/home/dev/trunk/js/common/content/message/upload
+END
+cancel.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/weibo/!svn/ver/195066/ria/t4/home/dev/trunk/js/common/content/message/upload/cancel.js
+END
+addItem.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/weibo/!svn/ver/138887/ria/t4/home/dev/trunk/js/common/content/message/upload/addItem.js
+END
+showMsg.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/weibo/!svn/ver/105280/ria/t4/home/dev/trunk/js/common/content/message/upload/showMsg.js
+END
+complete.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/weibo/!svn/ver/195110/ria/t4/home/dev/trunk/js/common/content/message/upload/complete.js
+END
+delegateEvt.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/weibo/!svn/ver/195066/ria/t4/home/dev/trunk/js/common/content/message/upload/delegateEvt.js
+END
+getFlash.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/weibo/!svn/ver/138887/ria/t4/home/dev/trunk/js/common/content/message/upload/getFlash.js
+END
+start.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/weibo/!svn/ver/195066/ria/t4/home/dev/trunk/js/common/content/message/upload/start.js
+END
+loadSwf.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/weibo/!svn/ver/195101/ria/t4/home/dev/trunk/js/common/content/message/upload/loadSwf.js
+END
+finish.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/weibo/!svn/ver/101404/ria/t4/home/dev/trunk/js/common/content/message/upload/finish.js
+END
+getExt.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/weibo/!svn/ver/138887/ria/t4/home/dev/trunk/js/common/content/message/upload/getExt.js
+END
+deleteItem.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/weibo/!svn/ver/138887/ria/t4/home/dev/trunk/js/common/content/message/upload/deleteItem.js
+END

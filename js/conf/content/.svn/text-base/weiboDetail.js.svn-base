@@ -1,0 +1,14 @@
+$Import('pl.relation.hisInfoSimple');
+$Import('pl.content.weiboDetail');
+$Import('pl.content.litePersonInfo');
+$Import('pl.content.changeLanguage');
+$Import('pl.relation.relatedPersonsNav');
+$Import('pl.content.homeInterest');
+//左导开始
+$Import('pl.leftNav.profilePersonal');
+$Import('pl.leftNav.profileOpt');
+//左导结束
+$Import('pl.content.top');
+$Import('pl.content.base');
+$Import('pl.content.medal');
+STK.pageletM.start();

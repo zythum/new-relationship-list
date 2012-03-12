@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://img.wcdn.cn/t4/style/css/module/base/frame.css" type="text/css" rel="stylesheet" />
+<link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+<!--link href="http://img.wcdn.cn/t4/style/css/module/layer/layer_person_card.css" type="text/css" rel="stylesheet" /-->
+<title>可能感兴趣的人</title>
+</head>
+<style>
+body{ background:#fff;}
+</style>
+<body>
+	<div style="width:200px;height:100px;border:1px red solid"></div>
+<div style="float:left;width:200px;height:250px;border:1px red solid">
+</div>
+<div id="pl_content_homeInterest" style="float:left;">
+	<!--div class="W_rightModule">
+		<div class="title"><a href="/pub/guess">可能感兴趣的人</a><a href="javascript:;" class="right W_linkb" node-type="changeBtn" action_type="change">换一换</a></div>
+		<div node-type="interest_panel">
+			<dl class="interPer clearfix" action_type="showchange">
+				<dt><a href="" title=""><img title="小爷张某" alt="" uid="1400046704" imgtype="head" src="http://tp2.sinaimg.cn/1282005885/50/1283203874/1" width="50" height="50"/></a></dt>
+				<dd><p class="name"><a href="" title="小爷张某小爷张某小爷张某小爷张某">小爷张某爷张某爷张某爷张某小爷张某</a></p><p class="info W_linkb"><a href="" title="可能离你很近">可能离你很近</a></p><p class="fllow"><a href="" class="W_addbtn"><img src="../../../images/common/transparent.gif" alt="" class="addicon" />加关注</a><a href=""  action_type="unInterest" action_data="uid=1283203874" class="nointer">不感兴趣</a></p></dd>
+			</dl>
+			<dl class="interPer clearfix" action_type="showchange">
+				<dt><a href="http://t.sina.com.cn/webartist" title=""><img title="小爷张某" alt="" uid="1400046704" imgtype="head" src="http://tp2.sinaimg.cn/1282005885/50/1283203874/1" width="50" height="50"/></a></dt>
+				<dd><p class="name"><a href="" title="小爷张某小爷张某小爷张某小爷张某">小爷张某爷张某爷张某爷张某小爷张某</a></p><p class="info W_linkb"><a href="" title="间接朋友">间接朋友</a></p><p class="fllow"><a href="" class="W_addbtn"><img src="../../../images/common/transparent.gif" alt="" class="addicon" />加关注</a><a href="" action_type="unInterest" action_data="uid=1283203874" class="nointer">不感兴趣</a></p></dd>
+			</dl>
+			<dl class="interPer clearfix" action_type="showchange">
+				<dt><a href="http://t.sina.com.cn/webartist" title=""><img title="小爷张某" alt="" uid="1400046704" imgtype="head" src="http://tp2.sinaimg.cn/1282005885/50/1283203874/1" width="50" height="50"/></a></dt>
+				<dd><p class="name"><a href="" title="小爷张某小爷张某小爷张某小爷张某">小爷张某爷张某爷张某爷张某小爷张某</a></p><p class="info W_linkb"><a href="" title="间接朋友">间接朋友</a></p><p class="fllow"><a href="" class="W_addbtn"><img src="../../../images/common/transparent.gif" alt="" class="addicon" />加关注</a><a href="" action_type="unInterest" action_data="uid=1283203874" class="nointer">不感兴趣</a></p></dd>
+			</dl>
+		</div>
+		<div class="more clearfix">
+	    	<span class="fl"><a href="#">推荐/隐私设置</a></span>
+	        <span class="fr"><a href="#">更多»</a></span>
+	    </div>
+	</div-->
+</div><div id='pl_content_personInfo'></div>
+</body>
+
+<script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js"></script>
+<script type="text/javascript" src="http://js.wcdn.cn/t4/home/js/pageletM.js">
+</script>
+<script>
+	//css: ["/css/module/global/right_module.css","/css/module/list/person_connect.css"],
+	STK.pageletM.view({
+		pid: "pl_content_homeInterest",
+		js: ["home/js/pl/content/homeInterest.js"],
+		css: ["style/css/module/global/right_module.css",
+			  "style/css/module/list/person_connect.css",
+			  "style/css/module/layer/layer_frame.css",
+			  "style/css/module/global/loading_line.css",
+			  "style/css/module/layer/layer_person_card.css"],
+		html: '<div class="W_rightModule"><div class="title">\
+				<a href="/pub/guess">可能感兴趣的人</a><a href="javascript:;" class="right W_linkb" node-type="changeBtn" action-type="change">换一换</a>\
+				</div><div node-type="interest_panel"><p style="padding-bottom:10px;">系统正在努力寻找...</p></div><div class="more clearfix">\
+	    	<span class="fl"><a href="#">推荐/隐私设置</a></span>\
+	        <span class="fr"><a href="#">更多»</a></span>\
+	    </div></div>'
+	});
+	STK.pageletM.view({
+		pid	: "pl_content_personInfo",
+		js	: ["home/js/pl/content/personInfo.js"],
+		css	: ["style/css/module/global/person_info.css",
+			   "style/css/module/global/person_count.css"] ,
+		html: 
+			'<div class="W_person_info" style="width:200px">'+
+				'<dl class="clearfix">'+
+					'<dt><a href="" title=""><img src="http://tp2.sinaimg.cn/1282005885/50/1283203874/1" alt=""  width="50" height="50" /></a></dt>'+
+					'<dd><a href="" userCard="我哦我33">遥小远遥小远遥小远ysdf<img src="http://js.wcdn.cn/t4/images/common/transparent.gif" alt="" class="approve"  width="11" height="10" /></a><div class="status">内蒙古-五个字地区</div></dd>'+
+				'</dl>'+
+			'</div>'+
+			'<div class="W_person_Num" style="width:200px">'+
+				'<ul class="clearfix">'+
+					'<li><a href="" class="left"><strong node-type="friends">1234</strong><span>关注</span></a></li>'+
+					'<li><a href="" class="right"><strong node-type="fans">10000000</strong><span>粉丝</span></a></li>'+
+					'<li><a href="" class="left"><strong node-type="friends">10000000</strong><span>好友</span></a></li>'+
+					'<li><a href="" class="right"><strong node-type="weibo">12345</strong><span>微博</span></a></li>'+
+				'</ul>'+
+			'</div>'
+	});
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="http://img.wcdn.cn/t4/style/css/pages/index/index.css" type="text/css" rel="stylesheet" />
+        <link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+        <title>微博单条页--相关微博用户</title>
+    </head>
+    <body>
+        <div id="pl_relation_relatedPersonsNav">
+        </div>
+    </body>
+    <script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js">
+    </script>
+    <script type="text/javascript" src="http://js.wcdn.cn/t4/home/js/base.js">
+    </script>
+    <script type="text/javascript">
+        STK.pageletM.view({
+            "pid": "pl_relation_relatedPersonsNav",
+            "html": '<div style="width:170px" class="W_rightModule" id=""><div class="title">相关微博用户</div><ul class="face_name clearfix"><li><a href="" class="per" title=""><img usercard="蔡康永" width="50" height="50" src="http://img.wcdn.cn/t4/style/images/common/pic/50.gif" alt="" class="headpic"><span usercard="蔡康永" class="name">蔡康</span></a><a href="javascript:void(0);" action-type="follow" class="addlink W_linkb" action-data="fuid=1226624037">加关注</a></li><li><a href="" class="per" title=""><img width="50" height="50" src="http://img.wcdn.cn/t4/style/images/common/pic/50.gif" alt="" class="headpic"><span class="name">小秦</span></a><a href="javascript:void(0);" action-type="follow" class="addlink W_linkb" action-data="fuid=1644686384">加关注</a></li><li><a href="javascript:void(0);" action-type="follow" class="per" title=""><img width="50" height="50" src="http://img.wcdn.cn/t4/style/images/common/pic/50.gif" alt="" class="headpic"><span class="name">蔡康永<img width="11" height="10" src="http://img.wcdn.cn/t4/style/images/common/transparent.gif" alt="" class="approve"></span></a><a href="javascript:void(0);" action-type="follow" action-data="fuid=1135452580" class="addlink W_linkb">加关注</a></li></ul></div>',
+			"js":["home\/js\/pl\/relation\/relatedPersonsNav.js"]
+        });
+    </script>
+</html>

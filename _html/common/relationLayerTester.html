@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Relation Layer Tester</title>
+<link href="/t4/style/css/module/base/frame.css" type="text/css" rel="stylesheet" />
+<link href="/t4/style/css/module/layer/layer_frame.css" type="text/css" rel="stylesheet" />
+<link href="/t4/style/css/module/layer/layer_invite.css" type="text/css" rel="stylesheet" />
+<link href="/t4/style/css/module/layer/layer_attention_choose.css" type="text/css" rel="stylesheet" />
+<link href="/t4/style/css/module/tab/tab_c.css" type="text/css" rel="stylesheet" />
+<link href="/t4/style/skin/default/skin.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+.answerQuestion{
+	height:200px;
+	width:400px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-200px;
+	margin-top:-100px;
+	background:#ccc;
+}
+</style>
+</head>
+<body>
+<div id="pl_relation_relationLayerTester"></div>
+<script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js"></script>
+<script type="text/javascript">
+STK.pageletM.view({
+	html : '<a node-type="answerQuestion" href="#" onclick="return false">+ 求关注</a>',
+    pid  : "pl_relation_relationLayerTester",
+    js   : ["home/js/pl/relation/relationLayerTester.js"]
+});
+</script>
+</body>
+</html>

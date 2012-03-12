@@ -1,0 +1,31 @@
+.tv {width:377px;height:250px;background:url(http://js.wcdn.cn/t4/home/_html/style/images/tv.png)}
+
+.tv .screen {
+	position:absolute;
+	top:13px;
+	left:24px;
+	width:329px;
+	height:184px;
+	overflow:hidden;
+}
+.tv .screen .simg {
+	display:none;
+	width:329px;
+	height:184px;
+}
+
+.tv .eSwitch {
+	position:absolute;
+	top:-15px;
+	left:165px;
+	cursor:pointer;
+}
+
+.tv .eSwitch .open {
+	display:none;
+}
+.tv .eSwitch .close {
+	display:none;
+}
+
+#js_home__html_style_tv{height:42px;}

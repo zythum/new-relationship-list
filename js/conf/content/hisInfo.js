@@ -1,0 +1,12 @@
+$Import('pl.content.top');
+//左导开始
+$Import('pl.leftNav.profilePersonal');
+$Import('pl.leftNav.profileOpt');
+//左导结束
+$Import('pl.content.myPersonalInfo');
+$Import('pl.content.base');
+$Import('pl.content.changeLanguage');
+$Import('pl.content.litePersonInfo');
+$Import('pl.content.myTags');
+$Import('pl.content.hisPersonalInfo');
+STK.pageletM.start();

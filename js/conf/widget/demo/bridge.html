@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>DEMO</title>
+		<style>
+			.form{
+				background-color: yellow;
+				width: 400px;
+			}
+			.button{
+				vertical-align:middle;
+				text-align:center;
+				font-size:12px;
+				color:#FFFFFF;
+				width: 100px;
+				height: 20px;
+				line-height:20px;
+				border:1px #990 solid;
+				background-color:#ADADAD;
+				display:block;
+			}
+			.disabled{
+				background-color:#EBEBEB;
+			}
+			.error{
+				color:#ffffff;
+			}
+			.checkbox{
+				border:#fff solid 1px;
+				background-color:#EBEBEB;
+				width : 10px;
+				height: 10px;
+				line-height: 10px;
+			}
+			.checkbox1{
+				border:#ebebeb solid 1px;
+				background-color:#990;
+				width : 10px;
+				height: 10px;
+				line-height: 10px;
+			}
+			.dd{
+				background-color:#990000;
+			}
+			.enabled{
+				background-color:#990000;
+			}
+			.disabledClass{
+				background-color:#ebebeb;
+				color:#990000;
+				vertical-align:middle;
+				text-align:center;
+				font-size:12px;
+				width: 100px;
+				height: 20px;
+				line-height:20px;
+				border:1px #990 solid;
+				background-color:#ADADAD;
+				display:block;
+			}
+			.preview{border:1px solid red;padding:10px;}
+		</style>
+		<link href="http://img.t.sinajs.cn/t4/style/css/module/combination/A_index.css?version=1322135457" type="text/css" rel="stylesheet" charset="utf-8" />
+		<script type="text/javascript">
+			var $CONFIG = {};
+			$CONFIG['jsPath'] = 'http://js.t.sinajs.cn/t4/';
+
+		</script>
+
+	</head>
+	<body>
+		<div component="widget.component.bridge">
+			<div id="holdit" class="form" component='widget.component.form' component-param="appkey=common" component-data="a=1&b=2">
+				<input type="text" name="ff" value="2"/>	
+				<div component="widget.component.buttonGroup" component-param="max=3&min=1">
+					<input type="radio" name="cs" value="1"/>
+					<input type="radio" name="cs" value="1"/>
+					<input type="radio" name="cs" value="1"/>
+					<input type="checkbox" name="cs" value="1"/>
+					<input type="checkbox" name="cs" value="2"/>
+					<input type="checkbox" name="cs" value="3"/>
+					
+				</div>
+				<div component="widget.component.selectArea" component-param="value=001011&text=请选择">
+					<select style="width:60px;" component-param="type=country"></select>
+					<select style="width:60px;" component-param="type=province"></select>
+					<select style="width:60px;" component-param="type=city"></select>
+				</div>
+				<div>limitInput:<input type="input" name="limitinput" component="widget.component.limitInput" component-param="max=10" value="11"/></div>
+				<div>limitInput2:<input type="input" name="limitinput2" component="widget.component.limitInput" component-param="max=20" value="11"/></div>
+				<div>calender:<input type="input" name="calender" component="widget.component.calender" component-param="default=请选择时间&end=2013-12-19&start=2010-02-19" value=""/></div>
+				<h3>demo preview1:</h3>
+				<!--<div style="position:relative;"><em>点击上传文件</em><span style="position:absolute;left:0;top:0;display:block;width:100px;height:20px;overflow:hidden;background-color:#000;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;" component="widget.component.file" component-param="map=imgpreview&number=1&width=100&height=20&once=1" name="file" value="   " ></span></div>-->
+				<div><span component="widget.component.file" component-param="map=imgpreview&number=1&width=100&height=20&once=1" name="file" value="   " ><em>点击上传文件</em></span></div>
+				<div component="widget.component.preview" component-param="map=imgpreview" class="preview"></div>
+				<h3>demo preview2:</h3>
+				<div component="widget.component.expand" component-param="map=textpreview&state=expand&css_expand=aaa&css_fold=bbb"><a href="javascript:void(0);">打开/关闭</a></div>
+				<div component="widget.component.preview" component-param="map=textpreview" class="preview">
+					<h5>demo preview2</h5>
+					<p>hello preview2!!!!!!!</p>
+				</div>
+				<h3>demo preview3:</h3>
+				<div>
+					<a component="widget.component.expand" component-param="map=btns&fixed=expand" href="javascript:void(0);">打开</a>
+					<a component="widget.component.expand" component-param="map=btns&fixed=fold" href="javascript:void(0);">关闭</a>
+				</div>
+				<div component="widget.component.preview" component-param="map=btns" class="preview">
+					<h5>demo preview3</h5>
+					<p>hello preview!!!!!!!</p>
+				</div>
+				
+				<a href="javascript:void(0);" onclick="return false;" class="button" component='widget.component.submit' component-param="disabled=1&enabledClass=button&disabledClass=disabledClass">提 交</a>
+				<div  class="error" component="widget.component.fail"></div>
+			</div>
+		</div>
+	</body>
+	<script src="/STK/js/gaea_1_15.js" type="text/javascript" ></script>
+	<script src="/t4/home/js/widget/parse.js" type="text/javascript" ></script>
+	<script>
+		var $ = STK, widget;
+		window.onload = function(){
+			widget = $.widget.parse(document.body, {
+				'baseURL' : 'http://js.t.sinajs.cn/t4/home/js/'
+			});
+			widget.init()
+		}
+	</script>
+</html>

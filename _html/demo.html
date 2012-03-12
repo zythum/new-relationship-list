@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>home</title>
+        <link href="style/room.css" rel="stylesheet" type="text/css" />
+        <link href="style/sofa.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+		<div class="room">
+			<div id="pl_demoBg"><div class="bg bright" node-type="bg"></div></div>
+			<div class="tv" id="pl_demoTV"></div>
+			<div class="sofa" id="pl_demoSofa"></div>
+            <div class="lamp" id="pl_demoLamp"></div>
+            <!--灯关样式lamp_off 灯开样式lamp_on-->
+            
+		</div>
+		<div id="log">
+			
+		</div>
+        <script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js">
+        </script>
+        <script type="text/javascript" src="http://js.wcdn.cn/t4/home/js/pageletM.js">
+        </script>
+        <script>
+//            STK.core.util.listener.register('lamp', 'on', function(){
+//                document.body.style.backgroundColor = '#EEEEEE';
+//            });
+//            STK.core.util.listener.register('lamp', 'off', function(){
+//                document.body.style.backgroundColor = '#333';
+//            });
+        </script>
+		<script>
+            STK.pageletM.view({
+                "html": '<div style="position:absolute;">' +
+                '<div class="screen">' +
+                '	<img node-type="screen" class="simg"/>' +
+                '</div>' +
+                '<div class="eSwitch" node-type="switch">' +
+                '	<img src="http://js.wcdn.cn/t4/home/_html/style/images/s_on.png" class="open" node-type="open" title="open"/>' +
+                '	<img src="http://js.wcdn.cn/t4/home/_html/style/images/s_off.png" class="close" node-type="close" title="close"/>' +
+                '</div>' +
+                '</div>', 
+                "pid": "pl_demoTV",
+                "variable_name": "tv",
+                "weight": "2",
+                "css": ['home\/_html\/style/tv.css'],
+                "js": ["home\/js\/pl\/demoTV.js"]
+            });
+        </script>
+        <script>
+            STK.pageletM.view({
+                "html": '<img class="simg" node-type="sofa" src="http://js.wcdn.cn/t4/home/_html/style/images/sofa.png" />',
+                "pid": "pl_demoSofa",
+                "variable_name": "sofa",
+                "weight": "2",
+                "css": ['home\/_html\/style/sofa.css'],
+                "js":["home\/js\/pl\/demoSofa.js"]
+            });
+        </script>
+        <script>
+			STK.pageletM.view({
+				"html":'<div node-type="lamp" class="lamp_on">'+
+	                '</div>'+
+	                '<div class="eSwitch" node-type="switch">'+
+	                '	<img src="http://js.wcdn.cn/t4/home/_html/style/images/s_on.png" class="open" node-type="open" title="open"/>'+
+	                '	<img src="http://js.wcdn.cn/t4/home/_html/style/images/s_off.png" class="close" node-type="close" title="close"/>'+
+					'</div>',
+				"pid":"pl_demoLamp",
+				"variable_name":"lamp",
+				"weight":"2",
+				"css": ['home\/_html\/style/lamp.css'],
+				"js":["home\/js\/pl\/demoLamp.js"]
+			});
+		</script>
+		 <script>
+			STK.pageletM.view({
+				"html":'<div node-type="bg" class="bg bright"></div>',
+				"pid":"pl_demoBg",
+				"variable_name":"bg",
+				"weight":"2",
+			"css": ['home\/_html\/style/bg.css'],
+				"js":["home\/js\/pl\/demoBg.js"]
+			});
+        </script>
+    </body>
+</html>

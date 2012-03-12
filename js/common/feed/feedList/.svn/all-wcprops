@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/weibo/!svn/ver/300067/ria/t4/home/dev/trunk/js/common/feed/feedList
+END
+myFavoritesList.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/weibo/!svn/ver/293741/ria/t4/home/dev/trunk/js/common/feed/feedList/myFavoritesList.js
+END
+myFeedList.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/weibo/!svn/ver/280435/ria/t4/home/dev/trunk/js/common/feed/feedList/myFeedList.js
+END
+atMeFeedList.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/weibo/!svn/ver/293741/ria/t4/home/dev/trunk/js/common/feed/feedList/atMeFeedList.js
+END
+plazaChosenFeedList.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/weibo/!svn/ver/146213/ria/t4/home/dev/trunk/js/common/feed/feedList/plazaChosenFeedList.js
+END
+homeFeedList.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/weibo/!svn/ver/280435/ria/t4/home/dev/trunk/js/common/feed/feedList/homeFeedList.js
+END
+tasksFeed.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/weibo/!svn/ver/251109/ria/t4/home/dev/trunk/js/common/feed/feedList/tasksFeed.js
+END
+baseFeedList.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/weibo/!svn/ver/190580/ria/t4/home/dev/trunk/js/common/feed/feedList/baseFeedList.js
+END
+feedTemps.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/weibo/!svn/ver/300067/ria/t4/home/dev/trunk/js/common/feed/feedList/feedTemps.js
+END
+groupFeedList.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/weibo/!svn/ver/298300/ria/t4/home/dev/trunk/js/common/feed/feedList/groupFeedList.js
+END
+utils.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/weibo/!svn/ver/118595/ria/t4/home/dev/trunk/js/common/feed/feedList/utils.js
+END
+topFeedList.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/weibo/!svn/ver/211835/ria/t4/home/dev/trunk/js/common/feed/feedList/topFeedList.js
+END
+hisFeedList.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/weibo/!svn/ver/280435/ria/t4/home/dev/trunk/js/common/feed/feedList/hisFeedList.js
+END

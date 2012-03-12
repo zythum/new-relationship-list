@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="http://img.wcdn.cn/t4/style/css/pages/setup/setup.css" type="text/css" rel="stylesheet" />
+        <link href="http://img.wcdn.cn/t4/style/css/module/base/frame.css" type="text/css" rel="stylesheet" />
+        <link href="http://img.wcdn.cn/t4/skin/default/skin.css" type="text/css" rel="stylesheet" />
+        <link href="http://img.wcdn.cn/t4/style/css/module/global/loading_line.css" type="text/css" rel="stylesheet" />
+        <title></title>
+    </head>
+    <body class="B_basic_info">
+        <div id="pl_content_setting_baseInfo">
+            <div class="pl_settings_baseInfo">
+                <div class="W_main_2col_r">
+                    <div class="index_title">
+                        <!--this page title--><h3>基本信息<span class="W_textb"><i class="CH">(</i><span class="W_spetxt CH">*</span>&nbsp;&nbsp;为必填项<i class="CH">)</i></span></h3>
+                        <h4>以下信息将显示在<a href="#">个人资料页</a>，方便大家了解你。</h4>
+                        <!--/this page title-->
+                    </div>
+                    <div class="form_table">
+                        <dl class="clearfix">
+                            <dt>
+                                	登录名：
+                            </dt>
+                            <dd class="conbox">
+                                qinyahua******@yahoo.com.cn
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>
+                                <span class="must CH W_spetxt">*</span>昵称：
+                            </dt>
+                            <dd class="conbox">
+                                <input node-type="nickName" type="text" class="W_inputStp" />
+                            </dd>
+                            <dd class="tipbox" node-type="red_nickName">
+                            </dd>
+                        </dl>
+						<dl class="clearfix">
+                            <dt>
+                               	真实姓名：
+                            </dt>
+                            <dd class="conbox">
+                                <input node-type="realName" type="text" class="W_inputStp" />
+                            </dd>
+                            <dd class="tipbox" node-type="red_realName">
+                            	<select node-type="realName_privace" name="pub_birthday" style="display: none;">
+		                    		<option value="2">所有人可见</option>
+									<option value="1">我关注的人可见</option>
+									<option value="0">仅自己可见</option>
+								</select>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>
+                                <span class="must CH W_spetxt">*</span>性别：
+                            </dt>
+                            <dd class="conbox">
+                                <input type="radio" name="gender" class="W_radio" checked="checked">
+                                <label class="cholab" for="1">
+                                    	男
+                                </label>
+                                <input type="radio" name="gender" class="W_radio">
+                                <label class="cholab" for="2">
+                                    	女
+                                </label>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>
+                                	生日：
+                            </dt>
+                            <dd class="conbox">
+	                            <select name="Date_Year" node-type="Date_Year" class="select">
+	                                <option value="1"></option>
+	                                <option value="1990" label="1990">1990</option>
+	                                <option value="1989" label="1989">1989</option>
+	                                <option value="1988" label="1988">1988</option>
+	                                <option value="1987" label="1987">1987</option>
+	                                <option selected="" value="1986" label="1986">1986</option>
+                                    </select>
+                                    <i class="chotxt">年</i>
+                                <select init_value="11" class="select" node-type="birthday_m" name="birthday_m">
+                                    <option value="0"></option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11" selected="">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <i class="chotxt">月</i>
+                                <select init_value="24" value="24" class="select" node-type="birthday_d" name="birthday_d">
+                                    <option value="0"></option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                </select><i class="chotxt">日</i>
+                            </dd>
+							<dd class="tipbox" node-type="red_date">
+								<select node-type="data_privace">
+		                    		<option value="0">公开,完整显示</option>
+									<option value="3">只显示星座</option>
+									<option value="2">只显示月日</option>
+									<option value="1">保密</option>
+								</select>
+							</dd>
+                        </dl>
+						<dl class="clearfix">
+                            <dt>
+                               	博客地址：
+                            </dt>
+                            <dd class="conbox">
+                                <input node-type="blog" type="text" class="W_inputStp" />
+								<div class="tips W_textb">还没有博客？<a href="#">立即开通</a></div>
+                            </dd>
+                            <dd class="tipbox" node-type="red_blog">
+                            	<select node-type="blog_privace">
+								 	<option value="0">所有人可见</option>
+									<option value="1">我关注的人可见</option>
+									<option value="2">仅自己可见</option>
+		                    	</select>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>
+                                	常用邮箱：
+                            </dt>
+                            <dd class="conbox">
+                            	<em node-type="favorite_email"></em>
+                                <a class="magtxt" href="javascript:;" node-type="modify_email">添加</a>
+								<input node-type="email_input" type="hidden" name="email"/>
+                            </dd>
+                            <dd class="tipbox">
+                            	<select node-type="email_privace">
+									<option value="2">所有人可见</option>
+									<option value="0">我关注的人可见</option>
+									<option value="1">仅自己可见</option>
+								</select>
+                            </dd>
+                        </dl>
+						<dl class="clearfix">
+                            <dt>
+                               	QQ：
+                            </dt>
+                            <dd class="conbox">
+                                <input node-type="QQ" type="text" class="W_inputStp" />
+                            </dd>
+                            <dd class="tipbox" node-type="red_QQ">
+                            	<select node-type="QQ_privace">
+									<option value="2">所有人可见</option>
+									<option value="0">我关注的人可见</option>
+									<option value="1">仅自己可见</option>
+								</select>
+                            </dd>
+                        </dl>
+						<dl class="clearfix">
+                            <dt>
+                               	MSN：
+                            </dt>
+                            <dd class="conbox">
+                                <input node-type="MSN" type="text" class="W_inputStp" />
+                            </dd>
+                            <dd class="tipbox" node-type="red_MSN">
+                            	<select node-type="MSN_privace">
+									<option value="2">所有人可见</option>
+									<option value="0">我关注的人可见</option>
+									<option value="1">仅自己可见</option>
+								</select>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>
+                                	一句话介绍：
+                            </dt>
+                            <dd class="conbox">
+                                <textarea node-type="bio" class="W_inputStp T_area">
+                                </textarea>
+                            </dd>
+							 <dd class="tipbox" node-type="red_bio">
+                            </dd>
+                        </dl>
+						<dl class="W_hline clearfix"></dl>
+                        <dl class="p_note clearfix">
+                            <dt>
+                                &nbsp;
+                            </dt>
+                            <dd>
+                               	 以下信息，可作为通过客服取回帐号的依据
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>
+                                	证件类型：
+                            </dt>
+                            <dd class="conbox">
+                                <select class="select" node-type="card_type">
+                                    <option value="1">身份证</option>
+                                    <option value="4">护照</option>
+                                </select>
+                            </dd>
+                            <dd class="tipbox">
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>
+                                	证件号码：
+                            </dt>
+                            <dd class="conbox">
+                                <input node-type="card" type="text" class="W_inputStp">
+                            </dd>
+                            <dd node-type="red_card" class="tipbox">
+                            </dd>
+                        </dl>
+						<!--保存按钮	-->
+                        <dl class="p_btn clearfix">
+                            <dt>
+                                &nbsp;
+                            </dt>
+                            <dd>
+                                <a node-type="submit" class="W_btn_d" href="javascript:;"><span>保存</span></a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="http://js.wcdn.cn/STK/js/gaea.js">
+    </script>
+    <script type="text/javascript" src="http://js.wcdn.cn/t4/home/js/base.js">
+    </script>
+    <script>
+        STK.pageletM.view({
+        	pid: "pl_content_setting_baseInfo",
+        	js: ["home/js/pl/content/setting/baseInfo.js"]
+        });
+    </script>
+</html>

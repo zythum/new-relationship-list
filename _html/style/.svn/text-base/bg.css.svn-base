@@ -1,0 +1,6 @@
+.bg{background:#000;height:1000px}
+.bright{opacity:0.4}
+.dark{opacity:0.9}
+#js_home__html_style_bg {
+    height: 42px;
+}
